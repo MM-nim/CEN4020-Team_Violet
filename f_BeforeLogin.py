@@ -18,9 +18,14 @@ MAX_PASSWORD_LENGTH = 12
 #The dictionary that store 5 unique student accounts
 #Name: Password
 accounts = {}
-accFullName = {}
-accFriends = {} # disctionaty to store friends
-pending_requests = {} # dictionary to store pending friend requests
+accFullName = {} #Dictionary to store full name of the user as a key and then their username as the value 
+accFriends = {} #Dictionary to store friends list
+majorName = {} #Dictionary to store the user's major
+usersByMajorList = []
+uniName = {} #Dictionary to store university the user attends
+usersByUniList = []
+lastNameuser = {} #Dictionary to store last name of a user
+pending_requests = {} #Dictionary to store pending friend requests
 usernameTrue = ""
 special_characters = "!@#$%^&*()-+?_=,<>/"
 loginStat = 0
@@ -58,8 +63,12 @@ def CreateNewAccount():
             #Stores users' name so they can be searched for by another user
             firstName = input(str("Please enter your first name: "))
             lastName = input(str("\nPlease enter your last name: "))
+
+            major = input(str("\nPlease enter the name of your major: "))
+            university = input(str("\nPlease enter the name of your university: "))
+
             fullname = firstName + lastName
-            accFriends[username] = []
+            # accFriends[username] = [] ##CAUSES ERROR: USERNAME USED BEFORE GLOBAL VARIABLE DECLARED
             #Checks to make sure the full name is unique
             for i in accFullName.keys():
                 if(i == fullname): #Checks to see if the first name and last name are a unique combination
@@ -134,9 +143,19 @@ def CreateNewAccount():
                 elif any(c in special_characters for c in i):
                     hasSpecial = 1
             
+            #This for when the username and password adhere to rules (so a new account is successfully made)
             if(hasCapital and hasDigit and hasSpecial):
                 accounts[username] = password
                 accFullName[fullname] = username #Saves the firstName and lastName as the key and the username as the value
+
+                #Saves the username of someone with this major as well as the username of associated with that university in lists
+                usersByMajorList.append(username)
+                usersByUniList.append(username)
+
+                #Saves the major and university information to the dictionary
+                majorName[major] = usersByMajorList
+                uniName[university] = usersByUniList
+
                 print("Your account created successful!")
                 print("\n")
                 writeDictonary()
@@ -180,6 +199,12 @@ def writeDictonary():
     #Saves the username and the user full name to numpy files
     np.save("accounts.npy", accounts)
     np.save("fullnames.npy", accFullName)
+
+    #Saves the majors and the universities full name to numpy files
+    np.save("majors.npy", majorName)
+    np.save("universities.npy", uniName)
+
+
     return 1
 
 def readDictonary():
@@ -187,11 +212,20 @@ def readDictonary():
     py_dict = np.load("accounts.npy", allow_pickle = "TRUE")
     py_dictFullName = np.load("fullnames.npy", allow_pickle = "TRUE")
 
+    py_dictMajor = np.load("majors.npy", allow_pickle = "TRUE")
+    py_dictUni = np.load("universities.npy", allow_pickle = "TRUE")
+
     global accounts
     global accFullName
 
+    global majorName
+    global uniName
+
     accounts = py_dict.item()
     accFullName = py_dictFullName.item()
+
+    majorName = py_dictMajor.item()
+    uniName = py_dictUni.item()
     return 1
 
 
