@@ -9,12 +9,22 @@ import numpy as np
 #from f_BeforeLogin import accFullName
 #from f_BeforeLogin import readDictionary
 import f_BeforeLogin as b_login
+
+#Variables
+pending_requests = {}
+accFriends = {} #Will connect the friends list (below) to the username of user in a dictionary format
+friendsList = [] #Will store the list of friends for a user
 '''
 Functions
 '''
 
 #This function to gives additional options after login is successful
 def addOptions(username):
+
+    ##ADD A VIEW PENDING FRIEND REQUEST OPTION
+    ##That option should check the requests dictionary (that loaded from the requests.npy file) to see if their username has
+    ##an attached requests (can be a function)
+
     print("\n")
     print("Welcome! What would you like to do?")
     print("1. Search for a job/internship")
@@ -40,8 +50,20 @@ def addOptions(username):
         elif choiceJob == "2":            
             postJob(username)
 
-    elif choice == "2":
+
+    ##THIS IS WHERE THE FIND BY NAME, MAJOR, UNIVERSITY OPTION SHOULD GO
+    elif choice == "2": 
+        ##Must create a an option for user to store their major, university and last name in numpy file
+        ##Should allow user to run through the numpy file of whichever option gets chosen to find username
+        ##A list of full names will get printed (by association from usernames)
+        ##Then it should allow the user to send a friend request to a chosen user which will store a pending request
+        ##for that user in the requests.npy file
+
         print("Find someone you know option is currently under construction.")
+
+
+
+
 
     elif choice == "3":
         print("Here are 5 skills you can learn:")
@@ -70,11 +92,17 @@ def addOptions(username):
 
         elif choiceSkill == "5":
             print("The Language Learning option is currently under construction.")
+
+
+        ##MOVE DIS   
         elif choiceSkill == "6":
             showMyNetwork(username)
             disconnectOption = input("Would you like to disconnect from anyone in your network? (yes/no): ")
-            if disconnectOption.lower() == "yes":
-                disconnectFromFriendOption(username)
+            if disconnectOption.lower() == "yes": #Add the choice of asking who they want to disconnect from
+                disconnectFromFriendOption(username) #Will not work without the choice of who the person wants to disconnect from
+
+
+
         else:
             print("7. Returning to the previous level. . .")
             addOptions(username)
@@ -472,6 +500,44 @@ def handleImportantLinks(username):
     
     return back
         
+
+
+##EPIC 4 ADD ON
+def writeFriendsList():
+    #Saves the names of people in the user's friends list to a numpy files
+    np.save("accFriends.npy", accFriends)
+    return 1
+
+def readFriendsList():
+    # print(" ")
+    #Reads the names of people in the user's friends list from a numpy files and loads it into accFriends dictionary
+    py_dict = np.load("accFriends.npy", allow_pickle = "TRUE")
+
+    global accFriends
+
+    accFriends = py_dict.item()
+    return 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
 # Function to display connected friends
 def showMyNetwork(username):
@@ -483,7 +549,7 @@ def showMyNetwork(username):
         print("You haven't connected with anyone yet.")
 
 # Function to handle disconnection from friends
-def disconnectFromFriend(username, friend_to_disconnect):
+def disconnectFromFriendOption(username, friend_to_disconnect):
     if username in accFriends and friend_to_disconnect in accFriends[username]:
         accFriends[username].remove(friend_to_disconnect)
         accFriends[friend_to_disconnect].remove(username)

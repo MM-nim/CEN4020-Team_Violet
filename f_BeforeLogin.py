@@ -11,7 +11,7 @@ import os
 '''
 Pre-difined Variables
 '''
-MAX_ACCOUNTS = 5
+MAX_ACCOUNTS = 10
 MIN_PASSWORD_LENGTH = 8
 MAX_PASSWORD_LENGTH = 12
 
@@ -54,7 +54,7 @@ def CreateNewAccount():
         return 0
     else:
         #Ask Unique username
-        while(1):
+        while(1): ##ASKS FOR USER MAJOR AND UNIVERSITY (create functions for each), then store in separate numpy files
             #Stores users' name so they can be searched for by another user
             firstName = input(str("Please enter your first name: "))
             lastName = input(str("\nPlease enter your last name: "))

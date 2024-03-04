@@ -1,0 +1,338 @@
+commit 0d1c335b458329e58d56e7e173bded281376f207
+Merge: 5bc3d7b 4049667
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 23:08:04 2024 -0500
+
+    Merge pull request #8 from MM-nim/main
+    
+    Fixed some bugs
+
+commit 5bc3d7b602f722d8e0642d963e47bed007c157e9
+Merge: 913f45c 0028ea7
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 22:43:09 2024 -0500
+
+    Merge pull request #7 from MM-nim/main
+    
+    Added fixes
+
+commit 913f45ce37dffb809968db7035f44035fef6e806
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 22:36:47 2024 -0500
+
+    Made test script for handleImportantLinks()
+
+commit 3a5274bdf864713152cc2a2367a10e9fbe842c28
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 22:25:48 2024 -0500
+
+    Fixed test script
+
+commit f602ff1796760a8608f057cc62f8ed3dead523ad
+Merge: 02d392b 0e2339e
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 22:10:49 2024 -0500
+
+    Merge pull request #6 from MM-nim/main
+    
+    JobPostings fix
+
+commit 4049667d2d4731dbf83883532ee7fec664f3f207
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 22:09:28 2024 -0500
+
+    Fixed some bugs
+
+commit 778920ddf419895a727075fc6ff19850a7d2b823
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 22:07:21 2024 -0500
+
+    Fixed some bugs
+
+commit 0028ea7a439e7e2661ccfdf573c722d128f2e79b
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 21:42:26 2024 -0500
+
+    Fixed some bugs
+
+commit 02d392b67be1e64e5046c2dd5cef23a5033ce698
+Merge: 7c5fc7d ad0177a
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 21:37:11 2024 -0500
+
+    Merge pull request #5 from MM-nim/main
+    
+    Added fixes
+
+commit 7662d38ff1fce46f43ae241bfd702169a7354384
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 21:31:34 2024 -0500
+
+    Added fixes
+
+commit 7c5fc7dfa5e45912383ce3912ea70ce002497752
+Merge: b985ab9 0e588c3
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 21:08:37 2024 -0500
+
+    Merge pull request #4 from MM-nim/bugfix
+    
+    Review
+
+commit 0e588c3a2e5d8380799364ba8fc0d91460dd6301
+Merge: 477bbb8 b985ab9
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 21:08:21 2024 -0500
+
+    Merge branch 'main' into bugfix
+
+commit 0e2339e0f2fea711a60f47ecec640d696ecf2d86
+Merge: 01c752a 02d392b
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 21:07:05 2024 -0500
+
+    Merge branch 'main' of https://github.com/MM-nim/CEN4020-Team_Violet into main
+
+commit 01c752a4290e861ad04c4a5448a6d256e90bfe6e
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 21:06:23 2024 -0500
+
+    Added fixes
+
+commit ad0177ae2b5c95cfe3149a974e3f0cb69bfc8e07
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 20:31:12 2024 -0500
+
+    Added fixes
+
+commit 477bbb8a33ea3a27e4beb1d6a54ed3c4ae9cbada
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 19:46:07 2024 -0500
+
+    Added the relevant functions to deal with user selecting InCollege Important Links
+
+commit a197c00b75ebb4cfbfb0416243d63f6837747c99
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 19:45:48 2024 -0500
+
+    Changed the location of functions and updated Important Links section
+
+commit a548ae4546b762b0c220ae73999be402e294213e
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 19:17:21 2024 -0500
+
+    Added the relevant functions to deal with user selecting InCollege Important Links
+
+commit 4227c73258077bbcdc6629105477e060d3c40246
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 19:16:34 2024 -0500
+
+    Added the InCollege Important Links Option
+
+commit b985ab940e4d163813356e7eac0351b5783fef4f
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 18:24:06 2024 -0500
+
+    Fixed some error
+
+commit 6210a7876cfa28f625e27af3c78d7518b6f677e5
+Merge: d3f2aca 610a590
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 20 18:10:03 2024 -0500
+
+    Merge pull request #3 from MM-nim/main
+    
+    Fixed the part where user does not get access after login
+
+commit d3f2aca127a5447598536c2b445ab3b3d4a07786
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 18:04:44 2024 -0500
+
+    Added the test script for toggleFeature()
+
+commit 610a590c5dca8cad822e338077549286a8f86a54
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 20 18:01:18 2024 -0500
+
+    Fixed the part where user does not get access after login
+
+commit 15ae20d03f2beac52b6465719c2ce4ab1eee66ef
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 17:53:05 2024 -0500
+
+    Added the test script for guestControls()
+
+commit 2f3b3dbc97edf1d5f98b74a96b2266c920685461
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 17:34:45 2024 -0500
+
+    Added test script for addOptions()
+
+commit 48288ae1e9ebb8f4bed80c838db8632e085eab4b
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 17:19:49 2024 -0500
+
+    Update test script for BeforeLogin
+
+commit 82002dca3f9b509faf88d2a58fd88a6c5d5b3c2b
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 17:08:41 2024 -0500
+
+    Made test script for f_BeforeLogin
+
+commit e115edb50b48472d2017cc74f93d24c68fff0473
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 16:40:30 2024 -0500
+
+    Added return value
+
+commit 9815fb4d4aeb59c7643192bd2834b3802107d2c4
+Merge: c4015b7 5f0f311
+Author: Awd12p3 <pabriceno@uninorte.edu.co>
+Date:   Tue Feb 20 15:26:39 2024 -0500
+
+    Merge branch 'main' of https://github.com/zion4343/CEN4020-Team_Violet
+
+commit c4015b70b0301aa17f41e1fa1cab494a97a66f74
+Author: Awd12p3 <pabriceno@uninorte.edu.co>
+Date:   Tue Feb 20 15:24:12 2024 -0500
+
+    Guest options added
+
+commit 5f0f31191ee2f38364e195a10751f032db242af4
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 15:23:53 2024 -0500
+
+    Added test script and added return value on each function
+
+commit de8e1fb4887a0cee113a6170134e678c7a285aca
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 20 14:41:45 2024 -0500
+
+    Added Useful Links Group: General, Browse InCollege, Business Solutions, and Directories in main function
+
+commit 72647b8f193bfe4a3c561ffb824f618f01fa86fa
+Merge: 027b161 c66cb22
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 13 22:34:35 2024 -0500
+
+    Merge pull request #2 from MM-nim/main
+    
+    Added Final Fix
+
+commit 027b161cd7a4e11d24677fef3bcb91df794341b9
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Tue Feb 13 19:28:35 2024 -0500
+
+    Added the function to post a job
+
+commit a13440da66cbddcc8c1efb88c81e10c9d4e49fa4
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 13 19:06:49 2024 -0500
+
+    Update f_BeforeLogin.py
+
+commit 1972e5ace5d7c71837d7fadba5d868f3bb3c57fc
+Merge: a0760c7 736d695
+Author: MM-nim <62457124+MM-nim@users.noreply.github.com>
+Date:   Tue Feb 13 17:56:34 2024 -0500
+
+    Merge pull request #1 from MM-nim/main
+    
+    Added a search for member option and a way to store user names
+
+commit c66cb2232cf9b317342e32794a19b72142d96b82
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 13 14:55:50 2024 -0500
+
+commit 57777b00b8022fe066b1b3866f9df863fff43683
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 13 14:53:55 2024 -0500
+
+    Users can sign up or log in after finding a contact they know
+
+commit b8de1a97e6675f1b175f12bb5b70f77a4c8388f8
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 13 14:53:06 2024 -0500
+
+    Added a way for users to join or sign in after searcing for other members
+
+commit a430aee1a93e85560087b97e1e353716fcf13546
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 13 14:51:47 2024 -0500
+
+    Fixed the Job Postings error and addOptions error
+
+commit 736d695290253cfd74795927e12a3092e0a1a2d4
+Author: MM-nim <pfrancis1@usf.edu>
+Date:   Tue Feb 13 10:16:19 2024 -0500
+
+    Added a search for member option and a way to store user names
+
+commit a0760c7f5846ab3e7ce5af8579f25819e55d8d5d
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Mon Feb 12 20:31:12 2024 -0500
+
+    Fixed the issue that could make 6 accounts
+
+commit d4bbf28955e70627fed076945bd232ea45ed46e6
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sun Feb 11 01:16:16 2024 -0500
+
+    Fixed the issue we could make more 5 accounts
+
+commit 10a83cfee40b9003b47d94460bc87fd53f1e3667
+Author: Jion Iwasaki <96575300+zion4343@users.noreply.github.com>
+Date:   Sat Feb 10 21:44:17 2024 -0500
+
+    Add files via upload
+    
+    Created deleteAllAccount.py to initialize all account info
+
+commit 97a38cbe2e6d08ff69d3138c04db6f1b6dee4b49
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sat Feb 10 21:05:59 2024 -0500
+
+    Developed the system that write accounts info to file and to read from
+
+commit d98a9a74b57078d11093f55a1f3653cd709c112b
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sat Feb 10 20:46:33 2024 -0500
+
+    Implemented the system the write account information in the file and read it from thefile
+
+commit b028f38a2a1bc924befabcb1e7135b7f8562d80d
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sat Feb 10 20:33:48 2024 -0500
+
+    Implemented the system to show success story and provide the option to see the video
+
+commit b58c71b52e863ee4a85f059ea7f033995eac21a7
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sat Feb 10 20:05:24 2024 -0500
+
+    Made text file to store accounts information
+
+commit 65e076aeb661952ec67ae9c60cd21d221117406c
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sat Feb 10 20:04:24 2024 -0500
+
+    Divided main function and other functions
+
+commit 3994dd7091d6041ca01d642025db8eabcbe8efe6
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sat Feb 10 19:35:53 2024 -0500
+
+    Implemented the system after Login
+
+commit 89758465fa084580465500c976109089d92fe235
+Author: Jion Iwasaki <iwasaki@usf.edu>
+Date:   Sun Feb 4 15:41:51 2024 -0500
+
+    Made LogIn System
+
+commit 621007467f9026a45c112186ca9ed2aa0172e669
+Author: Jion Iwasaki <96575300+zion4343@users.noreply.github.com>
+Date:   Sun Feb 4 14:17:41 2024 -0500
+
+    Create main.py
